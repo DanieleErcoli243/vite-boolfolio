@@ -36,7 +36,7 @@ export default {
         <div v-for="project in projects" :key="project.id" class="card">
             <h2>{{ project.title }}</h2>
             <figure>
-                <img src="" alt="{{project.title}}">
+                <img src="" alt="">
             </figure>
             <p>{{ project.description }}</p>
         </div>
