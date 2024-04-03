@@ -1,0 +1,23 @@
+// intestazione
+
+header {
+    padding: 10px;
+    border-bottom: 2px solid red;
+}
+
+// barra di navigazione
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+// lista coi pulsanti di navigazione
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
