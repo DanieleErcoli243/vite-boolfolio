@@ -3,6 +3,11 @@
 header {
     padding: 10px;
     border-bottom: 2px solid red;
+    box-shadow: 5px 0 5px rgb(1, 85, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 // barra di navigazione
@@ -20,4 +25,12 @@ ul {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+// contenitore
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+
 }
