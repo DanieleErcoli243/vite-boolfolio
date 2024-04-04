@@ -1,0 +1,10 @@
+figure {
+    float: left;
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+
+    }
+}

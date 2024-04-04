@@ -1,12 +1,12 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
-import HomePage from './components/pages/HomePage.vue';
-import ContactUsPage from './components/pages/ContactUsPage.vue';
+import axios from 'axios';
+
+import ProjectsList from '../ProjectsList.vue'
 const baseUri = 'http://localhost:8000/api/projects/';
 export default {
-    name: 'Boolfolio',
+    name: 'HomePage',
     components: {
-        AppHeader, HomePage, ContactUsPage
+        ProjectsList
     },
     data: () => ({
         projects: []
@@ -29,14 +29,13 @@ export default {
         this.fetchProjects();
     }
 };
+
 </script>
 
-<template>
-    <AppHeader />
-    <HomePage />
-    <ContactUsPage />
-</template>
 
-<style lang="scss">
-@use "./assets/scss/style.scss";
-</style>
+<template>
+
+    <div class="container">
+        <ProjectsList :projects="projects" />
+    </div>
+</template>
