@@ -12,3 +12,5 @@ const router = createRouter({
         { path: '/contact-us', component: ContactUsPage },
     ]
 });
+
+export { router }

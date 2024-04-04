@@ -16,6 +16,9 @@ export default {
             <li>
                 <h4>Show</h4>
             </li>
+            <li>
+                <h4>Contattaci</h4>
+            </li>
         </ul>
     </nav>
 
