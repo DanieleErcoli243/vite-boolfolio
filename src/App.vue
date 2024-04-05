@@ -1,40 +1,19 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
-import HomePage from './components/pages/HomePage.vue';
-import ContactUsPage from './components/pages/ContactUsPage.vue';
+
 const baseUri = 'http://localhost:8000/api/projects/';
 export default {
     name: 'Boolfolio',
     components: {
-        AppHeader, HomePage, ContactUsPage
+        AppHeader
     },
-    data: () => ({
-        projects: []
-    }),
-    methods: {
-        async fetchProjects() {
-            try {
-                const { data } = await axios.get(baseUri);
-                console.log(data);
 
-                this.projects = data;
-            } catch (err) {
-                console.error(err);
-            }
-
-
-        }
-    },
-    created() {
-        this.fetchProjects();
-    }
 };
 </script>
 
 <template>
     <AppHeader />
-    <HomePage />
-    <ContactUsPage />
+    <RouterView />
 </template>
 
 <style lang="scss">

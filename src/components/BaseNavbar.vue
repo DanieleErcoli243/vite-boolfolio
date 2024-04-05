@@ -11,13 +11,13 @@ export default {
         <h1>Boolfolio</h1>
         <ul>
             <li>
-                <h4>Home</h4>
+                <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-                <h4>Show</h4>
+                <RouterLink to="/show">Show</RouterLink>
             </li>
             <li>
-                <h4>Contattaci</h4>
+                <RouterLink to="/contact-us">Contattaci</RouterLink>
             </li>
         </ul>
     </nav>
