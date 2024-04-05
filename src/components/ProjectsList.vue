@@ -8,6 +8,21 @@ export default {
 </script>
 
 <template>
-    <ProjectCard :projects="projects" />
+    <div class="row">
+        <ProjectCard :projects="projects" />
+    </div>
 
 </template>
+
+
+<style lang="scss" scoped>
+/* fila di progetti */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+</style>
