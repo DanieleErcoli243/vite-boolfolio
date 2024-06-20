@@ -14,9 +14,6 @@ export default {
                 <RouterLink to="/">Home</RouterLink>
             </li>
             <li>
-                <RouterLink to="/show">Show</RouterLink>
-            </li>
-            <li>
                 <RouterLink to="/contact-us">Contattaci</RouterLink>
             </li>
         </ul>

@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'ProjectCard',
-    props: { projects: Array }
+    props: { projects: Array, project: Object, isDetail: Boolean }
 }
 </script>
 
@@ -16,5 +16,6 @@ export default {
         <h4>{{ project['type']['label'] }}</h4>
 
         <p>{{ project.description }}</p>
+        <RouterLink to="/show">Vai al dettaglio</RouterLink>
     </div>
 </template>
